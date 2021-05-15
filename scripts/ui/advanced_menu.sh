@@ -116,7 +116,7 @@ switch_menu(){
         2)
           clear
           print_header
-          switch_to_switch_to_klipper_py3
+          switch_to_klipper_py3
           read_branch
           print_msg && clear_msg
           switch_ui;;
