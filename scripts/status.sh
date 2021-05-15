@@ -245,6 +245,8 @@ read_branch(){
       if [[ $GET_BRANCH =~ [[:alnum:]] ]]; then
         if [ "$(git branch -r --contains $GET_BRANCH | grep "master")" ]; then
           GET_BRANCH="master"
+          elif [ "$(git branch -r --contains $GET_BRANCH | grep "python3_rebased")" ]; then
+          GET_BRANCH="python3_rebased"
         elif [ "$(git branch -r --contains $GET_BRANCH | grep "scurve-shaping")" ]; then
           GET_BRANCH="scurve-shaping"
         elif [ "$(git branch -r --contains $GET_BRANCH | grep "scurve-smoothing")" ]; then
@@ -282,6 +284,9 @@ read_remote_klipper_commit(){
     if [ "$GET_BRANCH" = "origin/master" ] || [ "$GET_BRANCH" = "master" ]; then
       git fetch origin -q
       REMOTE_COMMIT=$(git describe origin/master --always --tags | cut -d "-" -f 1,2)
+    elif [ "$GET_BRANCH" = "python3_rebased" ]; then
+      git fetch Piezoid python3_rebased -q
+      REMOTE_COMMIT=$(git describe Piezoid/python3_rebased --always --tags | cut -d "-" -f 1,2)
     elif [ "$GET_BRANCH" = "scurve-shaping" ]; then
       git fetch dmbutyugin scurve-shaping -q
       REMOTE_COMMIT=$(git describe dmbutyugin/scurve-shaping --always --tags | cut -d "-" -f 1,2)
