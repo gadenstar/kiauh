@@ -10,7 +10,7 @@ switch_to_klipper_py3(){
   if ! git remote | grep Piezoid -q; then
     git remote add Piezoid $KLIPPER_PY3
   fi
-  git fetch Piezoid -q && git checkout python3_rebased; echo
+  git fetch Piezoid -q && git checkout master; echo
 }
 
 switch_to_scurve_shaping(){
