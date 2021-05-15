@@ -91,7 +91,7 @@ switch_ui(){
   echo -e "|  1) [--> master]                                      | "
   echo -e "|                                                       | "
   echo -e "|  Piezoid:                                             | "
-  echo -e "|  2) [--> master]                                      | "
+  echo -e "|  2) [--> python3_rebased]                             | "
   echo -e "|                                                       | "
   echo -e "|  dmbutyugin:                                          | "
   echo -e "|  3) [--> scurve-shaping]                              | "
