@@ -48,6 +48,8 @@ ARKSINE_REPO=https://github.com/Arksine/klipper.git
 DMBUTYUGIN_REPO=https://github.com/dmbutyugin/klipper.git
 DWC2FK_REPO=https://github.com/Stephan3/dwc2-for-klipper-socket.git
 KLIPPERSCREEN_REPO=https://github.com/jordanruthe/KlipperScreen.git
+#add klipper py3 repos
+KLIPPER_PY3=https://github.com/Piezoid/klipper.git
 #branches
 BRANCH_SCURVE_SMOOTHING=dmbutyugin/scurve-smoothing
 BRANCH_SCURVE_SHAPING=dmbutyugin/scurve-shaping
