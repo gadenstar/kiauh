@@ -47,7 +47,7 @@ klipper_setup_dialog(){
 
 install_klipper_packages(){
   ### Packages for python cffi
-  PKGLIST="python-virtualenv virtualenv python-dev libffi-dev build-essential"
+  PKGLIST="virtualenv python-dev libffi-dev build-essential"
   ### kconfig requirements
   PKGLIST="${PKGLIST} libncurses-dev"
   ### hub-ctrl
